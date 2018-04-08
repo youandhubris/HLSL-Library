@@ -102,7 +102,7 @@ ______________________
 
 namespace Hubris
 {
-    float4 Blend(float4 backdrop, float4 source, int blendMode, int composite, int coverage)
+    inline float4 Blend(float4 backdrop, float4 source, int blendMode, int composite, int coverage)
     {
         // ---> Mix
         float3 mixed = 0.0;

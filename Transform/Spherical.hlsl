@@ -8,7 +8,7 @@ namespace Hubris
 {
     struct Spherical { float radius, theta, phi; };
 
-    inline Spherical toSpherical(float3 cartesian)
+    inline Spherical ToSpherical(float3 cartesian)
     {
         Spherical spherical;
         spherical.radius = length(cartesian);
@@ -17,7 +17,7 @@ namespace Hubris
         return spherical;
     }
 
-    inline float3 polarToCartesian(Spherical spherical)
+    inline float3 PolarToCartesian(Spherical spherical)
     {
         float3 cartesian;
         cartesian.x = spherical.radius * cos(spherical.theta) * sin(spherical.phi);
